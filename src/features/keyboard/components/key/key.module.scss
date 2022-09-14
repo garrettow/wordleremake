@@ -1,0 +1,54 @@
+.keyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex: 1;
+    height: 60px;
+    margin-right: 3px;
+}
+
+.keyContainer:hover {
+    cursor: pointer;
+}
+
+.util {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 1.1;
+    margin-right: 3px;
+}
+
+.util:hover {
+    cursor:pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .square {
+        height:35px;
+        width:40px;
+    }
+}
+ 
+.empty {
+    background-color:#FBECCB;
+    color:#2A2725;
+}
+
+.notInWord {
+    background-color:#4D4637;
+    color:#fff;
+}
+
+.rightSpot {
+    background-color:#4B6B1C;
+    color:#fff;
+}
+
+.wrongSpot {
+    color:#fff;
+    background-color:#B29600;
+}

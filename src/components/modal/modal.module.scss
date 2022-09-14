@@ -1,0 +1,68 @@
+@import "src/styles/animations.scss";
+
+.container {
+    padding: 20px;
+    background-color: #161513;
+    border: 2px solid #FBECCB;
+    border-radius: 8px;
+    gap: 40px;
+    margin: 0px;
+    width: 100%;
+    max-width: 500px;
+    animation-fill-mode: forwards;
+    animation-name: popIn;
+    animation-duration:0.1s;
+    z-index:1000;
+}
+
+.exitButton {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exitButton:hover {
+    cursor:pointer;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+.topHeader {
+    margin:0;
+    color:white;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fbeccb;
+    border-radius: 64px;
+  }
+  

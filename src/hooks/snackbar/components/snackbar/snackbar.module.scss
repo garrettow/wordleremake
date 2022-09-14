@@ -1,0 +1,10 @@
+@import "src/styles/animations.scss";
+
+.snackBar {
+    border-radius:5px;
+    background-color:#FBECCB;
+    color:#2A2725;
+    z-index:1000;
+    font-size:18px;
+    padding:10px 40px;
+}   

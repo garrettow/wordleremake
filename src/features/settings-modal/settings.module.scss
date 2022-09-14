@@ -1,0 +1,43 @@
+
+.settings {
+    position:absolute;
+    width:100%;
+    background-color:white;
+    height:100%;
+    z-index:1000000;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top:0%;
+    }
+
+    100% {
+        opacity: 0;
+        top:20%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+       opacity: 0;
+       top:50%;
+    }
+
+    100% {
+        opacity: 1;
+        top:0%;
+    }
+}
+
+.hide {
+    animation-name: fadeOut;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+}
+
+.show {
+    animation-name: fadeIn;
+    animation-duration:0.2s;
+}

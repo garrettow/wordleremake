@@ -1,0 +1,17 @@
+.board {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height:500px;
+    width:400px;
+    gap:4px;
+    background-color:lightblue;
+}
+
+.row {
+    
+}
+
+.square {
+    border:2px solid orange;
+}

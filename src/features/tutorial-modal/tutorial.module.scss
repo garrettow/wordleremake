@@ -1,0 +1,13 @@
+.home {
+    max-height: 400px;
+    overflow-y: auto;
+    height:100%;
+    color:#fff;
+}
+
+.letterRow {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 4px;
+}

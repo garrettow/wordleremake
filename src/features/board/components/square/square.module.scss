@@ -1,0 +1,93 @@
+.square {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-transform:uppercase;
+    font-weight:900;
+    font-size:36px;
+    border-radius:5px;
+    height:60px;
+    width:60px;
+}
+
+@media screen and (max-width: 360px), 
+       screen and (max-height: 650px) {
+    .square {
+        font-size:28px;
+        height:45px;
+        width:45px;
+    }
+}
+
+.popUp {
+    animation-name: size;
+    animation-duration:300ms;
+}
+
+.revealAnimation {
+    animation-name: revealIn;
+    animation-timing-function: ease-in;
+    animation-duration:250ms;
+    animation-fill-mode: forwards;
+}
+
+.hideAnimation {
+    animation-name: revealOut;
+    animation-timing-function: ease-in;
+    animation-duration:250ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes revealIn {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+@keyframes revealOut {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
+
+
+@keyframes size {
+    0% {
+        transform:scale(1.0);
+    }
+
+    50% {
+        transform:scale(1.2);
+    }
+
+    100% {
+        transform:scale(1.0);
+    }
+}
+
+.empty {
+    box-sizing:border-box;
+    border:2px solid #FBECCB;
+    color:#fff;    
+}
+
+.invalid {
+    background-color:#4D4637;
+}
+
+.correctSpot {
+    background-color:#4B6B1C;
+}
+
+.wrongSpot {
+    background-color:#B29600;
+}

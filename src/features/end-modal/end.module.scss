@@ -1,0 +1,59 @@
+.modal {
+    padding: 20px;
+    background-color: #161513;
+    border: 2px solid #FBECCB;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0px;
+    display:flex;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration:0.1s;
+    z-index: 10000;
+}
+
+.message {
+    font-size:48px;
+    color:#fff;
+    margin:0;
+}
+
+.button {
+    background-color: #ECE3CB;
+    color: #2A2725;
+    padding: 15px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.wordWas {
+    color:#fff;
+}
+
+.button:hover {
+    cursor:pointer;
+}
+
+.hideModal {
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+    animation-duration:0.1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    
+}
